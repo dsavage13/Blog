@@ -1,0 +1,18 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block title %}Detail{% endblock title %}
+
+{% block content %}
+<h1>{{ post.title }}</h1>
+<h3>{{ post.subtitle }}</h3>
+<p>{{ post.body }}</p>
+<small>By: {{ post.author }} | On: {{ post.created_on }}</small>
+{% if user.is_authenticated %}
+    {% if user == post.author %}
+    <br>
+    <br>
+    <a class="detail-link" href="{% url 'edit' post.id %}">Edit</a><a class="detail-link" href="{% url 'delete' post.id %}">Delete</a>
+    {% endif %}
+{% endif %}
+{% endblock content %}

@@ -1,0 +1,142 @@
+/* Base Dark Theme */
+body {
+    background-color: #121212; /* Dark background for the entire page */
+    color: #E0E0E0; /* Light text color for readability */
+    font-family: 'Arial', sans-serif;
+}
+
+.navbar {
+    background-color: #1f1f1f !important; /* Dark background for the navbar */
+    border-bottom: 1px solid #333; /* Subtle border for separation */
+}
+
+.navbar-brand, .nav-link {
+    color: #E0E0E0; /* Light text color for navbar links */
+    margin-right: 20px;
+}
+
+.navbar-brand:hover, .nav-link:hover {
+    color: #ff9800; /* Highlighted color on hover */
+}
+
+.navbar-toggler-icon {
+    background-color: #E0E0E0; /* White icon for the navbar toggler */
+}
+
+.navbar-nav{
+    display: flex;
+}
+
+.navbar-links{
+    display: flex;
+}
+
+.navbar-log-in{
+    display: flex;
+}
+
+/* Dropdown menu and other nav links */
+.navbar-nav .nav-link {
+    padding: 10px 15px;
+    font-size: 1.1em;
+}
+
+/* Page Content */
+.container {
+    max-width: 960px;
+    margin: 30px auto;
+    padding: 20px;
+    background-color: #1e1e1e; /* Dark container background */
+    border-radius: 8px; /* Rounded corners */
+}
+
+/* .container a{
+    background-color: orange;
+    display: inline-block;
+    padding: 5px;
+    border-radius: 5px;
+    width: 80px;
+    text-align: center;
+} */
+
+/* Section Titles */
+h1, h2, h3, h4, h5, h6 {
+    color: #fff; /* White titles for contrast */
+    font-weight: bold;
+
+}
+
+/* Paragraphs and text blocks */
+p, ul, ol {
+    color: #D3D3D3; /* Light text for general paragraphs */
+}
+
+/* Form elements */
+input, select, textarea, button {
+    background-color: #333; /* Dark background for input elements */
+    color: #fff; /* Light text in form fields */
+    border: 1px solid #555;
+    border-radius: 4px;
+    padding: 10px;
+}
+
+input:focus, select:focus, textarea:focus, button:focus {
+    outline: none;
+    border-color: #ff9800; /* Orange outline on focus */
+}
+
+input[type="submit"], button{
+    background-color: #ff9800; /* Button with an orange background */
+    color: #fff;
+    cursor: pointer;
+}
+
+input[type="submit"]:hover, button:hover {
+    background-color: #e68900; /* Slightly darker orange on hover */
+}
+
+/* Links */
+
+
+a:hover {
+    color: #e68900; /* Slightly darker orange on hover */
+    text-decoration: underline;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+    }
+    
+    .navbar-nav .nav-link {
+        font-size: 1em;
+    }
+}
+
+/* Card Styles */
+
+.card{
+    background-color: #373636;
+    color: #ff9800;
+}
+
+.card-subtitle{
+    color: #ebbb73 !important;
+}
+
+.card-body a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #848484;
+}
+
+
+.detail-link{
+    text-decoration: none;
+    background-color: #ff9800;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin-right: 10px;
+}
