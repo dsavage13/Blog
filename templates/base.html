@@ -24,12 +24,14 @@
                             <a class="nav-link" href="{% url 'home' %}">Home</a>
                             <a class="nav-link" href="{% url 'list' %}">Posts</a>
                             <a class="nav-link" href="{% url 'about' %}">About</a>
+                            <a class="nav-link" href="{% url 'archive' %}">Archives</a>
                             
                         </div>
                         <div class="navbar-log-in" style="display: flex;">
                             {% if user.is_authenticated %}
                             <a class="nav-link" href="{% url 'new' %}">Create New Post</a>
                             <a class="nav-link" href="{% url 'drafts' %}">My Drafts</a>
+
                             <form action="{% url 'logout' %}" method="POST">
                                 {% csrf_token %}
                                 <input type="submit" class="nav-link" value="Log Out">
